@@ -1,0 +1,186 @@
+#mainText {
+    font-size: 45px;
+    margin-top: 100px;
+    text-align: center;
+    color: #3880FF;
+}
+
+#center {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.ShowRow {
+    height: 40px;
+}
+
+#mainInput {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 30px;
+    border: 0.5px black solid!important;
+    width: 500px;
+}
+
+.W, .W td, .W tr {
+    border: 0.5px solid #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+    .M>p {
+        margin: 0;
+        padding: 0;
+        color: #3880FF
+    }
+    .M>tr>td>p {
+        margin: 0!important;
+        padding: 0;
+    }
+    .M {
+        height: 30px!important;
+        width: 100%;
+    }
+    .M>td, tr {
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        border-left: 0px solid none!important;
+        border-right: 0px solid none!important;
+    }
+    #mainText {
+        margin-right: auto;
+    }
+    #center {
+        width: 100%;
+        position: none!important;
+        align-items: center;
+    }
+    #mainInput {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        height: 60px;
+        margin-top: 40px;
+        border-radius: 30px;
+        border: 0.5px black solid!important;
+        width: 80%;
+    }
+    #searchRV {
+        margin-top: 20px!important;
+    }
+    #leftMain {
+        font-size: 25px!important;
+        text-align: center!important;
+        width: 100%;
+    }
+    #afterSearch {
+        margin-left: 0% !important;
+    }
+    #rightInput {
+        float: none!important;
+        margin-top: 20px!important;
+        right: 0%!important;
+        width: 70%!important;
+        margin-left: 5px!important;
+    }
+    #searchRight {
+        float: none!important;
+        width: 25%!important;
+        height: 40px!important;
+        margin-top: -4px;
+    }
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#time {
+    display: inline-block;
+}
+
+#search {
+    color: rgb(255, 255, 255);
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+ion-col {
+    border: 2px solid #aeb7ca;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.tallRow {
+    height: 100px;
+}
+
+td {
+    width: auto!important;
+}
+
+.performance {
+    background-color: rgb(226, 226, 226);
+}
+
+.hidden>* {
+    display: none;
+    visibility: hidden;
+}
+
+#leftMain {
+    font-size: 35px;
+    text-align: left;
+    color: #3880FF;
+    line-height: 10px;
+}
+
+#rightInput {
+    float: right;
+    margin-top: 5px;
+    right: 20%;
+    border-radius: 35px;
+    height: 40px!important;
+    border: 0.5px rgb(161, 161, 161) solid!important;
+    width: 300px;
+}
+
+#searchRight {
+    float: right;
+    height: 40px!important;
+    margin-right: -170px!important;
+}
+
+#afterSearch {
+    margin-left: 10%;
+}
+
+#afterSearch>* {
+    margin-left: 2px;
+    display: inline-block;
+    height: 30px;
+}
+
+.HideRow {
+    border: 0px !important;
+    display: none;
+}
+
+.red{
+    color: red
+}
+
+
+.HideRow1 {
+    border: none !important;
+    display: none;
+}

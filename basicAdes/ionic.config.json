@@ -1,0 +1,7 @@
+{
+  "name": "basicAdes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
