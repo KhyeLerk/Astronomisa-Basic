@@ -41,10 +41,10 @@ const App: React.FC = () => (
           <Route path="/Astronomisa-Basic" render={() => <Redirect to="/Astronomisa-Basic/DataViewer" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="top">
-          <IonTabButton tab="DataViewer" href="/DataViewer"> 
+          <IonTabButton tab="DataViewer" href="/Astronomisa-Basic/DataViewer"> 
             <IonLabel>Data Viewer</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="ResultViewer" href="/ResultViewer">
+          <IonTabButton tab="ResultViewer" href="/Astronomisa-Basic/ResultViewer">
             <IonLabel>Result Viewer</IonLabel>
           </IonTabButton>
         </IonTabBar>
