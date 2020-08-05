@@ -25,16 +25,16 @@ var i = 0;
 
 const getBasicResultsCache = (festivalId: number) => {
   //get table data per page
+  console.log(ResArr.length)
   for (var j = 0; j < ResArr.length; j++) {
-    console.log("hi")
     console.log(APIArr[j]);
 
     console.log(APIArr[j].includes(festivalId.toString()));
-    if (APIArr[j].includes(festivalId.toString())) {
+    if (APIArr[j].includes(festivalId.toString()) && festivalId.toString().length === 10 ) {
       console.log("exists")
       console.log(JSON.parse(ResArr[j]));
       var json = JSON.parse(ResArr[j])
-    
+
       return api.get(
         ``
       ).then(async (response) => {
@@ -51,11 +51,14 @@ const getBasicResultsCache = (festivalId: number) => {
   ).then(async (response) => {
     // Do something fantastic with response.data \o/
     console.log('Request response:', response.data.result)
-    ResArr[i] = JSON.stringify(response.data.result);
-    APIArr[i] = `https://jibaboom-astronomia.herokuapp.com/basic/result?festivalId=${festivalId}`
-    console.log(JSON.parse(ResArr[i]))
-    i++
-    if(i === 3){ i = 0}
+    if (response.data.result.length !== 0) {
+      console.log("stored");
+      ResArr[i] = JSON.stringify(response.data.result);
+      APIArr[i] = `https://jibaboom-astronomia.herokuapp.com/basic/result?festivalId=${festivalId}`;
+      console.log(JSON.parse(ResArr[i]));
+      i++;
+    }
+    if (i === 3) { i = 0 }
     return response.data.result
   }).catch(error => {
     console.log("error");
@@ -108,12 +111,20 @@ const ResultViewer: React.FC = () => {
 
   }
 
+  function timeout(i: number) {
+    setTimeout(function () {
+      i = 0
+    }
+      , 5000)
+    if (i = 0) return true
+  }
+
 
   return (
     <IonPage>
       <IonContent>
         <div id="center" className={hide()}>
-          <h1 id="mainText">Enter festivalId Below</h1>
+          <h1 id="mainText">Enter festivalId below</h1>
           <IonInput id="mainInput" type="number" min="0" value={festivalId} placeholder="Enter festivalId" onIonChange={e => { setFestivalId(parseInt(e.detail.value!, 10)) }} />
           <IonButton onClick={() => { getResults(festivalId) }} id="searchRV">Search </IonButton>
         </div>
@@ -136,7 +147,7 @@ const ResultViewer: React.FC = () => {
         <MediaQuery minDeviceWidth={600}>
 
 
-          <table className="W">
+          <table className={pressed === 1 && dataRow.length === 0 ? "red" : "W"}>
             {dataRow.map(item => {
               timeArr[j] = [<td key={item['startTime']}>{item['startTime']}-{item['endTime']}</td>]
               timeArrM[j] = [<td key={item['startTime']}><p>{item['startTime']}</p><p>{item['endTime']}</p></td>]
@@ -150,7 +161,7 @@ const ResultViewer: React.FC = () => {
 
             <tbody>
               <tr>
-                <td className={pressed === 1 && dataRow.length !== 0 ? "ShowRow" : "HideRow"}></td>
+                <td className={timeout && pressed === 1 && dataRow.length !== 0 ? "ShowRow" : "HideRow"}></td>
                 {
                   timeArr
                 }
