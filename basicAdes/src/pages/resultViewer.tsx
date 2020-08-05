@@ -113,7 +113,7 @@ const ResultViewer: React.FC = () => {
     <IonPage>
       <IonContent>
         <div id="center" className={hide()}>
-          <h1 id="mainText">Enter festivalId below</h1>
+          <h1 id="mainText">Enter festivalId Below</h1>
           <IonInput id="mainInput" type="number" min="0" value={festivalId} placeholder="Enter festivalId" onIonChange={e => { setFestivalId(parseInt(e.detail.value!, 10)) }} />
           <IonButton onClick={() => { getResults(festivalId) }} id="searchRV">Search </IonButton>
         </div>
