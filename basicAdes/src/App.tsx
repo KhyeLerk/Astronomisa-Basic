@@ -36,8 +36,8 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/DataViewer" component={DataViewer} exact={true} />
-          <Route path="/ResultViewer" component={ResultViewer} exact={true} />
+          <Route path="/Astronomisa-Basic/DataViewer" component={DataViewer} exact={true} />
+          <Route path="/Astronomisa-Basic/ResultViewer" component={ResultViewer} exact={true} />
           <Route path="/Astronomisa-Basic" render={() => <Redirect to="/DataViewer" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="top">
