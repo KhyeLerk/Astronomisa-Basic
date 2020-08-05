@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1599bd09bd246b604a212405d196a5c",
+    "revision": "4bc18f0fcb3e283711635bf286a791cc",
     "url": "/Astronomisa-Basic/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Astronomisa-Basic/static/css/4.341c5ad7.chunk.css"
   },
   {
-    "revision": "4a48d6e3f5a4d04076f8",
+    "revision": "46878063649e9052ded6",
     "url": "/Astronomisa-Basic/static/css/main.c918d5bb.chunk.css"
   },
   {
@@ -252,8 +252,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Astronomisa-Basic/static/js/9.b68b847e.chunk.js"
   },
   {
-    "revision": "4a48d6e3f5a4d04076f8",
-    "url": "/Astronomisa-Basic/static/js/main.fb7035d4.chunk.js"
+    "revision": "46878063649e9052ded6",
+    "url": "/Astronomisa-Basic/static/js/main.0c9078c6.chunk.js"
   },
   {
     "revision": "9580d696994792f465ff",
