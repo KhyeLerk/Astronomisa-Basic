@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Astronomisa-Basic/precache-manifest.446d50dfb842c234de3cb8b281910bbd.js"
+  "/Astronomisa-Basic/precache-manifest.6a56bcb819d1455c57a3c62f7cccc64f.js"
 );
 
 self.addEventListener('message', (event) => {
