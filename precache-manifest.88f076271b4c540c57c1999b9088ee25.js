@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04f4d0605825ebfb956864286692ebff",
+    "revision": "cb81977931d15c275e2c7d00b92b0934",
     "url": "/DataViewer/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataViewer/static/css/4.341c5ad7.chunk.css"
   },
   {
-    "revision": "bf12631f74cb278cbf9f",
+    "revision": "15db4a98aa449365f950",
     "url": "/DataViewer/static/css/main.c918d5bb.chunk.css"
   },
   {
@@ -252,8 +252,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DataViewer/static/js/9.b68b847e.chunk.js"
   },
   {
-    "revision": "bf12631f74cb278cbf9f",
-    "url": "/DataViewer/static/js/main.6db4b82b.chunk.js"
+    "revision": "15db4a98aa449365f950",
+    "url": "/DataViewer/static/js/main.270df6aa.chunk.js"
   },
   {
     "revision": "9580d696994792f465ff",
